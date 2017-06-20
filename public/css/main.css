@@ -1,0 +1,31 @@
+body{
+	font-family:'Quicksand Light';
+}
+
+#name{
+	color:black;
+}
+
+#age{
+	color: black;
+}
+
+p{
+	color: white;
+	font-size: 20px;
+}
+
+h1{
+	font-size: 40px;
+}
+
+h4{
+	font-size: 25px;
+}
+#title{
+	width: 100px;
+	height: 50px;
+	color: black;
+	right: 500%;
+	top: 500%;
+	font-family:
