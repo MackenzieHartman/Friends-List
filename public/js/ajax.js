@@ -22,7 +22,7 @@ $(document).ready(function(){  // **jQuery Code** When the document has been rea
 
 	$.ajax({
 		type: 'GET',
-		url: 'http://rest.learncode.academy/api/learncode/friends',
+		url: 'https://rest.learncode.academy/api/learncode/friends',
 		success: function(friends) { 					// friends = datan from url
 			(friends, function(i, friend){		// < a loop taj
 				addFriend(friends);
@@ -44,7 +44,7 @@ $(document).ready(function(){  // **jQuery Code** When the document has been rea
 			// console.log(friend.name);
 		$.ajax({  // frame work
 			type: 'POST',
-			url: 'http://rest.learncode.academy/api/learncode/friends',
+			url: 'https://rest.learncode.academy/api/learncode/friends',
 			data: friend,
 			success: function(newFriend){
 				// console.log(newFriend.name);
@@ -62,7 +62,7 @@ $(document).ready(function(){  // **jQuery Code** When the document has been rea
 		// AJAX DELETE Function - click the .remove class button and the id identifies what to delete
 		$.ajax({
 			type: 'DELETE',
-			url: 'http://rest.learncode.academy/api/learncode/friends/' + $(this).attr('id'),
+			url: 'https://rest.learncode.academy/api/learncode/friends/' + $(this).attr('id'),
 			success: function(){
 				$li.fadeOut(300, function(){
 					$(this).remove();
