@@ -3,15 +3,15 @@ var $name = $('#name');
 var $age = $('#age'); 
 
 var friendTemplate = "" +
-"<div>" +
+"<div style = margin-top:50px>" +
 	"<li>" +
-	"<p><strong> Name: </strong> {{name}}  </p>" +
-	"<p><strong> Age: </strong> {{age}} </p>" +
+	"<p style= margin-left:-300px><strong> Name: </strong> {{name}}  </p>" +
+	"<p style= margin-left:-300px><strong> Age: </strong> {{age}} </p>" +
 	"</li>" +
-	"<button id='{{id}}' class='remove' style=' border-radius: 20%;'>Remove</button>" +
+	"<li>" +
+	"<button id='{{id}}' class='remove' style=' border-radius: 10%; margin-left:-300px; margin-top: -300px'><span class='glyphicon glyphicon-trash'</span></button>" +
+	"</li>"
 "</div>";
-
-
 
 
 function addFriend(friend){											// orange=data received
